@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="container">
+            <div class="panel-heading">
+                <h3>Registration</h3>
+            </div>
+            <div class="panel-body">
+                <form onsubmit="return false">
+                    <div class="input-group">
+                        <div class="label-field">
+                            <span>Email:</span>
+                            <span id="errorEmail">Wrong email address</span>
+                        </div>
+                        <div class="input-field">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <input type="text" placeholder="email@gmail.com" id="inputEmail">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="label-field">
+                            <span>Password:</span>
+                            <span id="errorPassword">Wrong password</span>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" name="password" id="inputPassword" autocomplete="">
+                            <span class="icon"><i id="btnPassport" class="fa fa-eye-slash"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="label-field">
+                            <span>Repeat:</span>
+                            <span id="errorRepeat">Wrong password</span>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" name="inputReapt" id="inputReapt" autocomplete="">
+                            <span class="icon"><i id="btnReapt" class="fa fa-eye-slash"></i></span>
+                        </div>
+                    </div>
+                    <button type="submit" id="myButton">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
